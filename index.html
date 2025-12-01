@@ -1,73 +1,46 @@
 ---
-layout: null
+layout: default
 title: Your Project Title
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-</head>
-<body>
-  <main class="page">
-    <header class="hero">
-      <h1>Your Project Title: A Short Descriptive Subtitle Here</h1>
+<h1>Your Project Title: A Short Descriptive Subtitle Here</h1>
 
-      <p class="authors">
-        <a href="#" target="_blank">Author One</a>,
-        <a href="#" target="_blank">Author Two</a>,
-        Author Three
-      </p>
+<p><strong>Authors:</strong> 
+  <a href="#" target="_blank">Author One</a>,
+  <a href="#" target="_blank">Author Two</a>,
+  Author Three
+</p>
 
-      <div class="links">
-        <a class="btn" href="#" target="_blank">Paper</a>
-        <a class="btn" href="#" target="_blank">Video</a>
-        <a class="btn" href="#" target="_blank">Code</a>
-      </div>
+<p>
+  <a href="#" target="_blank">Paper</a> ·
+  <a href="#" target="_blank">Video</a> ·
+  <a href="#" target="_blank">Code</a>
+</p>
 
-      <p class="tagline">
-        A one-sentence tagline summarizing your project in a clear and attractive way.
-      </p>
-    </header>
+<h2>Abstract</h2>
+<p>
+  Put your project or paper abstract here. Describe the problem, your method, and key results
+  in one or two short paragraphs so that visitors can quickly understand what this work is about.
+</p>
 
-    <section id="abstract">
-      <h2>Abstract</h2>
-      <p>
-        Put your project or paper abstract here. Describe the problem, your method, and key results
-        in one or two short paragraphs so that visitors can quickly understand what this work is about.
-      </p>
-    </section>
+<h2>Key Ideas and Contributions</h2>
+<ul>
+  <li>Key idea or contribution 1.</li>
+  <li>Key idea or contribution 2.</li>
+  <li>Key idea or contribution 3.</li>
+</ul>
 
-    <section id="method">
-      <h2>Key Ideas and Contributions</h2>
-      <ul>
-        <li>Key idea or contribution 1.</li>
-        <li>Key idea or contribution 2.</li>
-        <li>Key idea or contribution 3.</li>
-      </ul>
-    </section>
+<h2>Results</h2>
+<p>
+  Summarize your experimental setup and main results here. You can also insert figures or tables
+  stored under the <code>assets/</code> folder and reference them with standard HTML <code>&lt;img&gt;</code> tags.
+</p>
+<!-- Example: <img src="{{ '/assets/result.png' | relative_url }}" alt="Results figure"> -->
 
-    <section id="results">
-      <h2>Results</h2>
-      <p>
-        Summarize your experimental setup and main results here. You can also insert figures or tables
-        stored under the <code>assets/</code> folder and reference them with standard HTML <code>&lt;img&gt;</code> tags.
-      </p>
-      <!-- Example: <img src="{{ '/assets/result.png' | relative_url }}" alt="Results figure"> -->
-    </section>
-
-    <section id="citation">
-      <h2>Citation</h2>
-      <pre><code>@article{your_citation_key,
+<h2>Citation</h2>
+<pre><code>@article{your_citation_key,
   title   = {Your Project Title},
   author  = {Author One and Author Two and Author Three},
   journal = {Conference or Journal},
   year    = {2025}
 }</code></pre>
-    </section>
-  </main>
-</body>
-</html>
